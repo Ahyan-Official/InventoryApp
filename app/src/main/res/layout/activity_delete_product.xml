@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteProductsActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:tint="@color/colorPrimary"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="Scan Bar/Qr Code to Delete"
+        android:textColor="#000000"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="325dp"
+            android:text="Product to Delete:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/barcodedelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:ems="10"
+            android:hint="Code Number"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/buttonscandelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/button"
+
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Scan Bar/QR Code"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/deleteItemToTheDatabasebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buttonscandelete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_red"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Delete Item" />
+    </LinearLayout>
+
+
+</RelativeLayout>
