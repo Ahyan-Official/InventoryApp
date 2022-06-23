@@ -4,7 +4,6 @@ package com.inventoryapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -37,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
         },splashTimeOut);
 
         //adding animation
-        Animation anim = AnimationUtils.loadAnimation(this,R.anim.mysplashanimation);
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.mysplashanimation);
 
         top.startAnimation(anim);
     }

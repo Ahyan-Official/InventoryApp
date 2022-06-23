@@ -2,11 +2,9 @@ package com.inventoryapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -81,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         auth.signOut();
         finish();
-        startActivity(new Intent(MainActivity.this,LoginActivity.class));
+        startActivity(new Intent(MainActivity.this, LoginActivity.class));
         Toast.makeText(MainActivity.this,"LOGOUT SUCCESSFUL", Toast.LENGTH_SHORT).show();
 
     }
