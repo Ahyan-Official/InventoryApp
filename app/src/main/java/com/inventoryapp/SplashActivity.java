@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
             }
         },splashTimeOut);
 
-        //adding animation
+        //animation
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.mysplashanimation);
 
         top.startAnimation(anim);

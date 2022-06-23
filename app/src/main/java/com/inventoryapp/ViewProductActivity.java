@@ -25,8 +25,6 @@ public class ViewProductActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_product);
 
 
-        //Top action bar
-
         ActionBar a = getSupportActionBar();
         a.setTitle("Product");
         a.setDisplayHomeAsUpEnabled(true);
