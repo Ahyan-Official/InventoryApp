@@ -27,6 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
     private ProgressBar progressBar;
 
     private FirebaseAuth mAuth;
+
     LinearLayout login;
 
     @Override
@@ -58,7 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //goto Login screen
+                //Login screen
 
                 startActivity(new Intent(getApplicationContext(),LoginActivity.class));
             }
